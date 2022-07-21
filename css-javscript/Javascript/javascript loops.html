@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h2>This is about loops</h2>
+</body>
+    <script>
+        console.log("This is about loops");
+        // for(i=0;i<5;i++)
+        // {
+        //   console.log(i);
+        //   //The values are printed from 0 t0 4;
+        // }
+        //for loop can also be used to iterate over a over.
+        let arr =[1,2,3,4,5];
+        // for(let index=0;index<arr.length;index++)
+        // {
+        //     console.log(arr[index]);
+        // }
+        //In modern method employee can be written as
+        for(element of arr)
+        {
+            console.log(arr[element]);
+        }
+        //can also be used to iterate over a object
+        let employee = {
+            name:"vamshi",
+            salary:"10",
+            age:20
+        }
+        for(key in employee)
+        {
+            console.log(employee[key]);
+        }
+        //while loop in js
+        let i=0;
+        while(i<4)
+        {
+            console.log(i);
+        }
+        //do while loop in js
+        let k =10;;
+        do{
+            console.log(k);
+        }while(k<15);
+    </script>
+   
+</html>

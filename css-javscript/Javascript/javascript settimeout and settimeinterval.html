@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout and settimeinterval</title>
+</head>
+<body>
+     <h2>Settimeout and settime interval</h2>
+</body>
+<script>
+      function greet(){
+          console.log("hello");
+      }
+      // if you want a function to be executed only after certain intervel of time then settimeout is used.
+      let i= setTimeout(greet,5000);
+      //if you want the function to stopped before the timer reaches then cleartimeout is used.
+      clearTimeout(i);
+
+      //if you want a function to run infinity times after the timer reaches then use setinterval;
+      let k=setInterval(greet,2000);
+      //if you want the function to stopped before the timer reaches then cleartimeout is used.
+      clearInterval(k);
+
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+<body>
+<div class="container">
+      <h1>Hello arrays and objects</h1>
+    </div>
+    <script>
+        // Here employee is a object which can multiple types of data in it 
+        let employee={
+            name: "vamshi",
+            salary: 10,
+            age: 18
+        }
+        console.log(employee.age);
+        console.log(employee.name);
+        // Array is special kind of object
+        let array =[1,2,"vamshidhar",undefined];
+        // this is how we access the values in a array 
+        console.log(array[1]);
+        console.log(array[3]);
+        // Array can also be created by using new keyword
+        let arr = new Array(4,2,3);
+        //find the length of the array
+        console.log(arr.length);
+        //sort the array
+        arr=arr.sort();
+        console.log(arr);
+        //push the values ino the array
+        arr.push(1);
+        console.log(arr);
+    </script>
+</body>
+</html>

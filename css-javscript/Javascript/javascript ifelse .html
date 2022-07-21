@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of a variable and if else</title>
+</head>
+<body>
+    <u>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+    </u>
+    <script>
+        var str = "How are you";
+        console.log(str);
+        // the value of a string can be altered
+        str="I am fine";
+        console.log(str);
+        // scope of a variable using let is global here
+        let a="10";
+        {
+            // here scope of a variable is restricted to the block
+            let a = "20";
+            console.log(a);
+        }
+        console.log(a);
+        // Execution of if and else
+        let age=18;
+        if(age>18)
+        {
+            console.log("You are eligible to vote");
+        }
+        else if(age>18)
+        {
+            console.log("You are not eligible to vote");
+        }
+        else
+        {
+            console.log("Ok lets see");
+        }
+        
+        
+        //working with switch case
+        let name = "vamshi";
+        switch (name){
+            case "kisss":
+                console.log("hi kisss");
+                break;
+            case "kisss":
+                console.log("hi vamshi");
+                break;
+                //if none of the above cases are matched then default case is executed
+            default:
+                console.log("ok ok");
+        }
+        //const keyword
+        const b ="lets check this"
+        b="I am not able to change this"
+        console.log(b);
+
+    </script>
+</body>
+</html>

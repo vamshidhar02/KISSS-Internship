@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert and prompt</title>
+</head>
+<body>
+    <h1>This is a page</h1>
+</body>
+<script>
+    //alert is kind of a function which shows some message to the user before the landing page.
+    //this doesn't return anything.
+    // alert("This is under development");
+     
+    //promt takes some input from the user before proceeding to the page
+    // let name = prompt("Who are you");
+    // console.log(name);
+
+    //confirm in js
+    //confirm function returns a boolean value as the output.
+    let deletepost = confirm("Do you want to delete this post?");
+    console.log(deletepost);
+
+    if(deletepost==true)
+    {
+        console.log("Post deleted successfully");
+    }
+    else
+        console.log("Post is not deleted");
+
+</script>
+</html>

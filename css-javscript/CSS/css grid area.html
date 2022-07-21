@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid area</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: repeat(4,auto); */
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section aside aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            font-size: 12px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="navbar">Welcome to my room</div>
+        <div class="item" id="section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A sapiente quo adipisci nobis voluptates suscipit totam consequatur quia. Voluptatibus tempore possimus, maxime quis quisquam adipisci minima distinctio error eveniet veritatis rerum, dolorem ad sint? Fuga repellat mollitia animi magni deserunt eum quod aperiam. Quasi sit suscipit deserunt autem dolores repellat ullam sapiente error! Eveniet voluptatibus recusandae qui repellendus consectetur, voluptatem dignissimos soluta incidunt perferendis totam, ut numquam eaque temporibus dicta quia accusantium vel tenetur iure deleniti mollitia suscipit. Perferendis, ipsum velit blanditiis eligendi consequuntur accusamus voluptatibus officia ad nostrum, aperiam enim quae quam eos alias saepe explicabo! Obcaecati asperiores ipsum ad eveniet in magni iusto animi nam aliquid dolore tenetur itaque nostrum doloremque fugit, quas possimus quisquam facilis laboriosam harum ipsam nihil! Optio tempora temporibus quas? Nesciunt voluptas provident itaque quos sapiente ducimus est necessitatibus, aut rerum, hic exercitationem voluptates aspernatur dolores deleniti, quibusdam obcaecati quaerat sit numquam repellendus nostrum omnis cupiditate. Laborum qui accusamus nesciunt architecto temporibus dolores doloremque in dolor rem laboriosam perferendis non, praesentium excepturi error ipsam adipisci iusto odio, nobis ipsum ea. Odit, officiis placeat voluptates dolore facere perspiciatis explicabo dolorum maxime laboriosam laborum ducimus ipsa a quae nesciunt cumque voluptate dicta alias earum doloribus veniam.</div>
+        <div class="item"id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tenetur. Architecto aperiam facere laboriosam voluptas. Esse necessitatibus dicta dolores. Tenetur animi veritatis saepe veniam aliquam perspiciatis, praesentium odit distinctio iste repudiandae molestias aperiam magni harum culpa accusantium ullam ducimus, optio, numquam ex blanditiis magnam nobis. Labore ullam recusandae quibusdam assumenda, laboriosam saepe voluptatem soluta asperiores, quos sequi officia inventore cupiditate dolores dignissimos impedit in! Veniam, ad fugiat adipisci quas similique aspernatur officiis architecto vel commodi odio fugit mollitia quasi alias culpa quod eaque praesentium? Esse accusantium nobis odit optio dolore maiores expedita ducimus at, sapiente aliquid hic quas, iusto sed libero fuga veritatis quis ea sit doloremque, aliquam perspiciatis est quasi porro. Ipsam earum cumque suscipit facere quos aperiam illum mollitia dolore nam dignissimos, possimus et libero beatae rem fuga voluptatem ullam vitae praesentium, asperiores nihil hic eos! Aspernatur illum, facilis ex, earum similique exercitationem quod corporis quis nostrum accusantium quisquam id nulla? Libero officiis cumque saepe. Aspernatur voluptatum quo accusamus dolorem soluta beatae, amet repellat optio quas ea praesentium inventore dolor, deserunt consequuntur, numquam asperiores. Molestiae ipsum dicta tenetur numquam quasi deleniti eius placeat ipsam commodi accusantium sit odio aspernatur, recusandae earum repudiandae? Pariatur impedit eius odio sunt voluptatibus!
+        </div>
+        <footer>
+            <div class="item" id="footer">This is the end Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ab! Ea laborum officia adipisci voluptate, deleniti maiores natus perspiciatis tenetur.</div>
+        </footer>
+    </div>
+</body>
+</html>
+
+//Documentation
